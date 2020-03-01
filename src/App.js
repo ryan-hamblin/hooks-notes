@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 import CreateNote from "./components/CreateNote";
+import Notes from "./components/Home";
+
 import { Route, Switch, Link } from "react-router-dom";
 
 function App() {
@@ -13,7 +15,7 @@ function App() {
       </div>
       <Switch>
         <Route path="/" exact>
-          <div>Hi mom</div>
+          <Notes />
         </Route>
         <Route path="/create">
           <CreateNote />
